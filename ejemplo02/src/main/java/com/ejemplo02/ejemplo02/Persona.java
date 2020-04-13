@@ -49,5 +49,4 @@ public class Persona{
     public void setApellidos(String apellidos) {
         this.apellidos = apellidos;
     }
-    
 }
