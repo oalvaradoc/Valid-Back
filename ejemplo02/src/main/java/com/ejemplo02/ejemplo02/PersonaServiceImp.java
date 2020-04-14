@@ -11,7 +11,13 @@ public class PersonaServiceImp implements PersonaService{
     
     @Override
     public List<Persona> listar() {
-        return repositorio.findAll();
+    	
+    	try {
+    		return repositorio.findAll();
+		} catch (Exception e) {
+			return null;
+		}	
+        
     }
 
     @Override
